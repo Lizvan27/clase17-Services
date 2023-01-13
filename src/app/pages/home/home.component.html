@@ -1,0 +1,28 @@
+
+<div class="container mt-5">
+  
+    <h2>Ejercicio en Clase</h2>
+    
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>User</th>
+            <th>Title</th>
+            <th>Detalle</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of mostrar">
+            <td>{{i.userId}}</td>
+            <td>{{i.title}}</td>
+            <td>  
+                <a>  
+                <a class="waves-effect waves-light btn-small"
+                style="height: 25px !important;width: 100px;margin-bottom: 9px !important;margin-right: 2px; font-size: 11px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFdpIUzktveIG9J5ApcNv59Pf3vySwGyDHvA&usqp=CAU" alt="" width="30px"></a>
+                </a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
